@@ -1,0 +1,18 @@
+@hostname = http://localhost
+@port = 3000
+@host = {{hostname}}:{{port}}
+@contentType = application/json
+### List all messages
+GET {{host}}/messages
+
+### List single message
+GET {{host}}/messages/1
+
+### Create a new Message
+
+POST {{host}}/messages
+Content-Type: application/json
+
+{
+    "content": "message 1"
+}
