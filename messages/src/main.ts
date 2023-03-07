@@ -8,7 +8,8 @@ async function bootstrap() {
       validatorPackage: require('@nestjs/class-validator'),
       transformerPackage: require('@nestjs/class-transformer')
     }
-  ));  let port = 3000
+  ));
+  let port = 3000
   await app.listen(port, () => console.log("Server is running on Port =", port));
 }
 bootstrap();

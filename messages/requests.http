@@ -6,7 +6,7 @@
 GET {{host}}/messages
 
 ### List single message
-GET {{host}}/messages/1
+GET {{host}}/messages/9687
 
 ### Create a new Message
 
