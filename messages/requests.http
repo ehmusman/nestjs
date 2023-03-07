@@ -6,7 +6,7 @@
 GET {{host}}/messages
 
 ### List single message
-GET {{host}}/messages/9687
+GET {{host}}/messages/8148
 
 ### Create a new Message
 
@@ -14,5 +14,5 @@ POST {{host}}/messages
 Content-Type: application/json
 
 {
-    "content": "message 1"
+    "content": "message 1 ddddd"
 }
