@@ -1,0 +1,33 @@
+@hostname = http://localhost
+@port = 3000
+@host = {{hostname}}:{{port}}
+@contentType = application/json
+
+### Create a new Message
+POST {{host}}/auth/signup
+Content-Type: application/json
+
+{
+    "email": "ehmusman2@gmail.com",
+    "password": "12345"
+}
+
+### Get a single USER
+GET {{host}}/auth/user/2
+
+### List All Users
+GET {{host}}/auth/users
+
+
+### Delete a single USER
+DELETE {{host}}/auth/1
+
+
+### Delete a single USER
+PATCH {{host}}/auth/3
+Content-Type: application/json
+
+{
+    "email": "ehmusman22@gmail.com",
+    "password": "12345"
+}
