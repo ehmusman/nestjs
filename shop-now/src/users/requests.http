@@ -2,15 +2,34 @@
 @port = 3000
 @host = {{hostname}}:{{port}}
 @contentType = application/json
-### Create a new Message
+### Signup User
 
 POST {{host}}/auth/signup
 Content-Type: application/json
 
 {
     "password": "123456",
-    "email": "ehmusman@gmail.com"
+    "email": "ehmusman4@gmail.com"
 }
+
+### Signin
+
+POST {{host}}/auth/signin
+Content-Type: application/json
+
+{
+    "password": "123456",
+    "email": "ehmusman4@gmail.com"
+}
+
+### Get Self Profile
+
+GET {{host}}/auth/whoAmI
+
+### Signout
+
+POST {{host}}/auth/signout
+
 
 ### Find a user with ID
 
@@ -20,9 +39,14 @@ GET {{host}}/auth/7
 
 GET {{host}}/auth?email=ehmusman1@gmail.com
 
+
+### List All Users
+GET {{host}}/auth/users
+
+
 ### Delete User by ID
 
-DELETE {{host}}/auth/6
+DELETE {{host}}/auth/3
 
 ### Update User
 
